@@ -42,7 +42,7 @@ mkdir ~/Dossier_Test
 
 - ### **Supprimer un fichier/répertoire**
 ```bash
-rm -r
+rm -r nomfichier
 ```
 
 - ### **Créer un document .txt**

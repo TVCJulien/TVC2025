@@ -71,12 +71,12 @@ cp Source Destination
 touch nomfichier
 ```
 
-- ### **Voir Fichier d'un fichier**
+- ### **Voir contenu d'un document txt**
 ```bash
 cat nomfichier
 ```
 
-- ### **Voir le contenu d'un document**
+- ### **Voir le contenu d'un document pour le modifier**
 ```bash
 nano nomfichier
 ```

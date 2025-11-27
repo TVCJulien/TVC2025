@@ -69,3 +69,5 @@ find -name nom
 ```bash
 cp Source Destination
 ```
+##### Pour copier l'entièreter du dossier Cp -r Source Destination
+

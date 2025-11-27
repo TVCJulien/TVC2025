@@ -64,3 +64,8 @@ history
 ```bash
 find -name nom
 ```
+
+- ### **Copier un fichier dans une source**
+```bash
+cp Source Destination
+```

@@ -45,11 +45,6 @@ mkdir ~/Dossier_Test
 rm -r nomfichier
 ```
 
-- ### **Créer un document .txt**
-```bash
-touch nomfichier
-```
-
 - ### **Bouger un fichier**
 ```bash
 mv source destination/
@@ -71,3 +66,22 @@ cp Source Destination
 ```
 ##### Pour copier l'entièreté du dossier Cp -r Source Destination
 
+- ### **Créer un document .txt**
+```bash
+touch nomfichier
+```
+
+- ### **Voir Fichier d'un fichier**
+```bash
+cat nomfichier
+```
+
+- ### **Voir le contenu d'un document**
+```bash
+nano nomfichier
+```
+
+- ### **écrire nouvelle ligne sur un document**
+```bash
+echo "Message voulu" >> nomfichier
+```

@@ -37,7 +37,7 @@ man
 
 - ### Créer un répertoire
 ```bash
-mkdir
+mkdir ~/Dossier_Test
 ```
 
 - ### **Supprimer un fichier/répertoire**

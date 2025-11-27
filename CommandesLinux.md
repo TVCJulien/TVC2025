@@ -5,11 +5,10 @@ ctrl + alt + t
 ````
 
   - ### Lister le contenu d'un répertoire
-    ##### Possible ajout d'une option aprés -l (exemple ls -l /)
-              
 ```bash
   ls -l
 ```
+##### *Possible ajout d'une option aprés -l (exemple ls -l /)*
 
 - ### Naviguer dans les répertoires
 ```bash
@@ -31,10 +30,10 @@ pwd
 ```
 
 - ### Ouvrir l'aide pour une commande
-##### *example: man ls*
 ```bash
 man
 ```
+##### *example: man ls*
 
 - ### Créer un répertoire
 ```bash

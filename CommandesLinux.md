@@ -15,6 +15,15 @@ ctrl + alt + t
 ```bash
 cd
 ```
+- ### Retour au répertoire parent
+```bash
+cd ..
+```
+
+- ### Naviguer sur un répertoire du dossier parent
+```bash
+cd ../NomRépertoire
+```
 
 - ### Afficher le chemin du répertoire
 ```bash
@@ -35,4 +44,24 @@ mkdir
 - ### **Supprimer un fichier/répertoire**
 ```bash
 rm -r
+```
+
+- ### **Créer un document .txt**
+```bash
+touch nomfichier
+```
+
+- ### **Bouger un fichier**
+```bash
+mv source destination/
+```
+
+- ### **Historique des commandes**
+```bash
+history
+```
+
+- ### **Retrouver un dossier**
+```bash
+find -name nom
 ```

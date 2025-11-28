@@ -97,6 +97,11 @@ nano nomfichier
 echo "Message voulu" >> nomfichier
 ```
 
+- ### **Filtrer recherche**
+```bash
+grep [OPTIONS] MOTIF [FICHIER]
+```
+
 - ### **Donner des droits à un fichier**
 ```bash
 chmod [<SET><ACTION><PERMISSIONS>]... FICHIER
@@ -123,3 +128,43 @@ dd if=/dev/zero of=/tmp/swapex bs=1M count=50
 | of=/tmp/swapex          | of=fichier de sortie à écrire       |                               |
 | bs=1M                   | bs=Taille du fichier voulu en octect| M=Mega, K=kilo etc            |
 | count=20                |count=nombre de ligne à lire         |                               |
+
+- ### **éteindre le système en toute sécurité**
+```bash
+shutdown [OPTIONS] HEURE [MESSAGE]
+```
+
+- ### **Information config réseau**
+```bash
+ifconfig [OPTIONS]
+```
+##### *iwconfig :wireless*
+
+- ### **Afficher les processus**
+```bash
+ps [OPTIONS]
+```
+ Description              | PID = Id processus                  |TTY = Nom du terminal où est en cours le processus |Time = temps utilisé du processeur | CMD = commande utilisé pour le démarrer |
+| :---:                   | :---:                               | :---:                                             |:---:                              |:---:                                    |
+
+- ### **Obtenir des paquets**
+```bash
+sudo apt-get update
+```
+- ### **Installer des paquets / màj**
+```bash
+sudo apt-get install [paquet]
+```
+
+- ### **Supprimer paquet**
+```bash
+apt-get remove [paquet]
+```
+```bash
+apt-get purge [paquet]
+```
+
+- ### **Modifier mot de passe**
+```bash
+passwd [OPTIONS] [UTILISATEUR]
+```

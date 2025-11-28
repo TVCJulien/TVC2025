@@ -76,6 +76,17 @@ touch nomfichier
 cat nomfichier
 ```
 
+- ### **Voir contenu supérieur doc txt**
+```bash
+head [OPTIONS] [FICHIER]
+```
+##### *option -n = choisir le nombre de ligne qu'on veut afficher*
+
+- ### **Voir contenu inférieur doc txt**
+```bash
+tail [OPTIONS] [FICHIER]
+```
+
 - ### **Voir le contenu d'un document pour le modifier**
 ```bash
 nano nomfichier
@@ -85,3 +96,30 @@ nano nomfichier
 ```bash
 echo "Message voulu" >> nomfichier
 ```
+
+- ### **Donner des droits à un fichier**
+```bash
+chmod [<SET><ACTION><PERMISSIONS>]... FICHIER
+```
+| Command | Description   |                        |                        |         |
+| :---:   | :---:         |:---:                   | :---:                  | :---:   |
+| Set     | U : User      | G : Group              | o : others             | a : all |
+| action  | + : add droit | = : affecter le droit  | - : Supprimer le droit |         |
+| perm    | r : read      | w : write              | x : execute            |         |
+
+- ### **Modifié propriété fichier**
+```bash
+chown [OPTIONS] [PROPRIÉTAIRE] FICHIER
+```
+##### *exemple : sudo chown root hello.sh*
+
+- ### **copier des fichiers ou des partitions entières au niveau du bit.**
+```bash
+dd if=/dev/zero of=/tmp/swapex bs=1M count=50
+```
+| Command                 | Description                         |                               |
+| :---:                   | :---:                               | :---:                         |
+| dd if=/dev/zero         | if=chemin d'entrée                  |                               |
+| of=/tmp/swapex          | of=fichier de sortie à écrire       |                               |
+| bs=1M                   | bs=Taille du fichier voulu en octect| M=Mega, K=kilo etc            |
+| count=20                |count=nombre de ligne à lire         |                               |

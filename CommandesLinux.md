@@ -211,5 +211,5 @@ usermod -g (ou -G) [Options] nomuutilisateur
 - ### **Forcer changement password puis verifier**
 ```bash
 passwd -e nomutilisateur
-cat /etc/shadow | grep nomutilisateur
+cat /etc/shadow | grep nomutilisateur (si ! au début ou pas de valeur vers la fin = pas encore changé)
 ```

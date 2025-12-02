@@ -202,3 +202,8 @@ deluser -r username
 ```bash
 passwd
 ```
+
+- ### **modifier groupe d'un utilisateur**
+```bash
+usermod -g (ou -G) [Options] nomuutilisateur
+```

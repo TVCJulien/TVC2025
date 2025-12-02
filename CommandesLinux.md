@@ -168,3 +168,8 @@ apt-get purge [paquet]
 ```bash
 passwd [OPTIONS] [UTILISATEUR]
 ```
+
+- ### **ajouter un utilisateur**
+```bash
+adduser nomutilisateur
+```

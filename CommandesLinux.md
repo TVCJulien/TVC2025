@@ -180,3 +180,20 @@ passwd [OPTIONS] [UTILISATEUR]
 ```bash
 adduser nomutilisateur
 ```
+
+- ### **ajouter un utilisateur en contrôlant les droits Root)**
+```bash
+useradd -d /home/alf2 -m -s /bin/bash -g stagiaire -G sudo -u 1002 alf2
+```
+| Command                 | Description                                                         |
+| :---:                   | :---:                                                               |
+| -d /home/alf2 -m        | Créer un utilisateur dans /home/alf 2 si pas de dossier -m          |
+| -s /bin/bash            | -s affecter le droit de commande                                    |
+| -g stagiaire            | -g = Premier groupe                                                 |
+| -G sudo                 | -G = groupe secondaire                                              |
+| -u 1002 alf2            | ajouter un ID à l'utilisateur                                       |
+
+- ### **Supprimer un utilisateur**
+```bash
+deluser -r username 
+```

@@ -197,3 +197,8 @@ useradd -d /home/alf2 -m -s /bin/bash -g stagiaire -G sudo -u 1002 alf2
 ```bash
 deluser -r username 
 ```
+
+- ### **modifier password**
+```bash
+passwd
+```

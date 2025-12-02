@@ -207,3 +207,9 @@ passwd nomutilisateur
 ```bash
 usermod -g (ou -G) [Options] nomuutilisateur
 ```
+
+- ### **Forcer changement password puis verifier**
+```bash
+passwd -e nomutilisateur
+cat /etc/shadow | grep nomutilisateur
+```

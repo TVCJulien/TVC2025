@@ -200,7 +200,7 @@ deluser -r username
 
 - ### **modifier password**
 ```bash
-passwd
+passwd nomutilisateur
 ```
 
 - ### **modifier groupe d'un utilisateur**

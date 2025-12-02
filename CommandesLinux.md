@@ -10,6 +10,13 @@ ctrl + alt + t
 ```
 ##### *Possible ajout d'une option aprés -l (exemple ls -l /)*
 
+  - ### Connexion en Super user ou un compte autre
+```bash
+  Su - (Compte root)
+  Su - username
+```
+##### *Quitter l'user qu'on a emprunté*
+
 - ### Naviguer dans les répertoires
 ```bash
 cd

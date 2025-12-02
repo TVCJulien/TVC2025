@@ -15,7 +15,7 @@ ctrl + alt + t
   Su - (Compte root)
   Su - username
 ```
-##### *Quitter l'user qu'on a emprunté*
+##### *Exit pour quitter l'user qu'on a emprunté*
 
 - ### Naviguer dans les répertoires
 ```bash

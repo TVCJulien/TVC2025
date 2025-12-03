@@ -140,11 +140,11 @@ dd if=/dev/zero of=/tmp/swapex bs=1M count=50
 ```bash
 shutdown [OPTIONS] HEURE [MESSAGE]
 ```
-| Option                      | Description                         |                                                                   |
-| :---:                       | :---:                               | :---:                                                             |
-| -h + indication temporelle  | Shutdown aprés x temps              | Shutdown +20 (fonctionne de la même façon que shutdown -h 20      |
-| -r                          | redémarrer Linux normalement        | Shutdown -r + 20 et redemarrer a une heure voulu Shutdown -h 17:30|
-| -c                          | Annule un arrêt ou redémarrage      |                                                                   |
+| Option                      | Description                         |                                                                                          |
+| :---:                       | :---:                               | :---:                                                                                    |
+| -h + indication temporelle  | Shutdown aprés x temps              | Shutdown +20 (fonctionne de la même façon que shutdown -h 20 (redemarre aprés 20 minutes)|
+| -r                          | redémarrer Linux normalement        | Shutdown -r + 20 et redemarrer a une heure voulu Shutdown -h 17:30                       |
+| -c                          | Annule un arrêt ou redémarrage      |                                                                                          |
 
 - ### **Information config réseau**
 ```bash

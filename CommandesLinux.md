@@ -193,10 +193,16 @@ useradd -d /home/alf2 -m -s /bin/bash -g stagiaire -G sudo -u 1002 alf2
 | -G sudo                 | -G = groupe secondaire                                              |
 | -u 1002 alf2            | ajouter un ID à l'utilisateur                                       |
 
-- ### **Supprimer un utilisateur**
+- ### **Supprimer un utilisateur de façon soft**
 ```bash
 deluser -r username 
 ```
+- ### **Supprimer un utilisateur*
+```bash
+userdel <Option> username
+```
+##### ajouter -r en option pour supprimer répertoire personnel de l'utilisateur.
+
 
 - ### **modifier password**
 ```bash

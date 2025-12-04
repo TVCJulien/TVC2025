@@ -177,7 +177,7 @@ apt-get remove [paquet]
 apt-get purge [paquet]
 ```
 
-- ### **Afficher list packets Màj dispo**
+- ### **Afficher list paquets Màj dispo**
 ```bash
 apt list --upgradable
 ```

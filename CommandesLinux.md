@@ -55,6 +55,8 @@ rm -r nomfichier
 - ### **Bouger un fichier**
 ```bash
 mv source destination/
+Si pas de chemin modifie le nom du fichier par celui voulu
+mv NomActuel nomVoulu
 ```
 
 - ### **Historique des commandes**

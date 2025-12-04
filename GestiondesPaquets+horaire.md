@@ -125,7 +125,7 @@ date
 timedatectl timesync-status
 ```
 
-- ### Se synchro avec une Horloge internet
+- ### Synchro horloge avec serveur NTP spécifique
 ```bash
 /etc/systemd/timesyncd.con
 nano timesync.conf

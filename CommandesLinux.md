@@ -102,6 +102,7 @@ nano nomfichier
 - ### **écrire nouvelle ligne sur un document**
 ```bash
 echo "Message voulu" >> nomfichier
+Si seulement > écrase toutes les données d'avant
 ```
 
 - ### **Filtrer recherche**

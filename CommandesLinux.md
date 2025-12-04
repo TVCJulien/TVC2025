@@ -176,6 +176,11 @@ apt-get remove [paquet]
 apt-get purge [paquet]
 ```
 
+- ### **Afficher list packets Màj dispo**
+```bash
+apt list --upgradable
+```
+
 - ### **Modifier mot de passe**
 ```bash
 passwd [OPTIONS] [UTILISATEUR]

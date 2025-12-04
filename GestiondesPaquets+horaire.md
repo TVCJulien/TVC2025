@@ -89,8 +89,7 @@ exemple :
 wget https://dl.google.com/linux/linux_signing_key.pub
 
 Pour renomer la key
-mv NomKeygpctuelle nomVoulu
-modifier format de la clé
+mv NomKeyAtuelle nomVoulu
 
 Modifier format de la clé
 

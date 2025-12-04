@@ -70,8 +70,8 @@ wget lien du paquet
 exemple :
 wget https://dl.google.com/linux/linux_signing_key.pub
 
-pour renomer la key
-"mv NomKeygpctuelle nomVoulu
+Pour renomer la key
+mv NomKeygpctuelle nomVoulu
 modifier format de la clé
 
 Modifier format de la clé

@@ -128,7 +128,7 @@ timedatectl timesync-status
 - ### Synchro horloge avec serveur NTP spécifique
 ```bash
 /etc/systemd/timesyncd.con
-nano timesync.conf
+nano timesyncd.conf
 mettre le serveur qu on souhaite à la ligne #NTP = lien (Ne pas oublier de retire le # qui est pour les commentaires)
 Timedatectl set-ntp true
 Redémarrer le service pour actualliser

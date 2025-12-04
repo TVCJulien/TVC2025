@@ -51,7 +51,7 @@ Corriger les problèmes en cas de dépendances manquantes
 apt --fix-broken install
 
 supprimer paquet 
-```bash
+
 apt remove nomdupaquet laisse les fichiers de configuration
 ```
 
@@ -122,5 +122,14 @@ Se synchro avec une Horloge internet
 ```bash
 /etc/systemd/timesyncd.con
 nano timesync.conf
-mettre le serveur qu'on souhaite aprés NTP= en supprimant le diése (#)
+mettre le serveur qu on souhaite à la ligne #NTP = lien (Ne pas oublier de retire le # qui est pour les commentaires)
+
+Redémarrer le service pour actualliser
+systemctl restart systemd-timesyncd.service
+```
+
+Recupérer la list des times zones possibles
+
+```bash
+timedatectl list-timezones
 ```

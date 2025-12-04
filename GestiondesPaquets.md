@@ -33,6 +33,23 @@ dpkg -l
 récuperer spécifiquement un nom dpkg -l | grep nomdupaquet
 ```
 
+Installé un paquet qui n'a pas de distrib linux et dev qui ne ofurnis pas de dépots
+```bash
+Placez vous dans le répertoire /tmp.
+Téléchargez discord avec la commande wget :
+wget discord.deb "https://discord.com/api/download?platform=linux&format=deb
+
+renommer le paquet récupérer
+mv nomdufichier nouveaunom (possible de le trouver avec ls)
+
+installer le paquet
+dpkg -i discord.deb
+```
+
+Corriger les problèmes en cas de dépendances manquantes
+```bash
+apt --fix-broken install
+
 supprimer paquet 
 ```bash
 apt remove nomdupaquet laisse les fichiers de configuration
@@ -79,4 +96,31 @@ Modifier format de la clé
 gpg--dearmor google-key.pub > google-key.gpg
 ```
 
+Mettre à jours complètement le système des distributions intallé
+```bash
+apt full-upgrade
+si besoin de nettoyer cache
+apt autoclean et suppression des paquets inutiles apt autoremove
+```
 
+Upgrade la distribution 
+```bash
+apt dist-upgrade
+```
+
+vérifier heure système
+```bash
+date
+```
+
+Voir si l'horloge est synchro
+```bash
+timedatectl timesync-status
+```
+
+Se synchro avec une Horloge internet
+```bash
+/etc/systemd/timesyncd.con
+nano timesync.conf
+mettre le serveur qu'on souhaite aprés NTP= en supprimant le diése (#)
+```

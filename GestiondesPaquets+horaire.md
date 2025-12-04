@@ -42,8 +42,10 @@ wget discord.deb https://discord.com/api/download?platform=linux&format=deb
 
 ```bash
 mv nomdufichier nouveaunom (possible de le trouver avec ls)
+```
 
-installer le paquet
+- ### installer le paquet
+```bash
 dpkg -i discord.deb
 ```
 
@@ -82,7 +84,7 @@ apt install --only-upgrade nomdupaquet
 cd/etc/apt/sources.list.d/
 (enregistrer des dépots dedans)
 
-Ce rendre dans /usr/share/keyrings/.
+Ce rendre dans /etc/apt/keyrings/.
 pour télécharger une fois dedans
 wget lien du paquet
 exemple :
@@ -94,6 +96,11 @@ mv NomKeyAtuelle nomVoulu
 Modifier format de la clé
 
 gpg--dearmor google-key.pub > google-key.gpg
+
+deb [signed-by=/etc/apt/keyrings/google-key.pub.gpg] http://dl.google.com/linux/chrome/deb/ stable main
+
+aptupdate
+apt install nomdelaclé
 ```
 
 - ### Mettre à jours complètement le système des distributions intallé

@@ -1,52 +1,53 @@
-afficher la list des sources apt 
+- ### Afficher la list des sources apt 
 ```bash
 cat /etc/apt/sources.lits
 ```
 
 
-Mettre à jours la liste des paquets dispo
+- ### Mettre à jours la liste des paquets dispo
 ```bash
 apt update
 ```
-si ign = ignore = impossible à dl
+##### si ign = ignore = impossible à dl
 
 
-Lancer la mise à jours des paquets
+- ### Lancer la mise à jours des paquets
 ```bash
 apt upgrade
 ```
 
-pour lister et les mettres à jours
+- ### pour lister et les mettres à jours
 ```bash
 apt update && apt upgrade
 ```
 
-Installer un paquets
+- ### Installer un paquets déjà dispo dans le dépots
 ```bash
 apt install nomdupaquet
-(si dispo dans la liste de base)
 ```
 
-Voir la list des paquets installés 
+- ### Voir la list des paquets installés 
 ```bash
 dpkg -l
 récuperer spécifiquement un nom dpkg -l | grep nomdupaquet
 ```
 
-Installé un paquet qui n'a pas de distrib linux et dev qui ne ofurnis pas de dépots
+- ### Installé un paquet qui n'a pas de distrib linux et dev qui ne fournis pas de dépots
 ```bash
 Placez vous dans le répertoire /tmp.
 Téléchargez discord avec la commande wget :
-wget discord.deb "https://discord.com/api/download?platform=linux&format=deb
+wget discord.deb https://discord.com/api/download?platform=linux&format=deb
+```
+- ### renommer le paquet récupérer
 
-renommer le paquet récupérer
+```bash
 mv nomdufichier nouveaunom (possible de le trouver avec ls)
 
 installer le paquet
 dpkg -i discord.deb
 ```
 
-Corriger les problèmes en cas de dépendances manquantes
+- ### Corriger les problèmes en cas de dépendances manquantes
 ```bash
 apt --fix-broken install
 
@@ -55,28 +56,28 @@ supprimer paquet
 apt remove nomdupaquet laisse les fichiers de configuration
 ```
 
-supprimer paquet 
+- ### Supprimer paquet 
 ```bash
 apt purge nomdupaquet supprime même les fichiers de configurations
 ```
 
-supprimer avec les dépendances
+- ### Supprimer avec les dépendances
 ```bash
 apt autoremove nomdupaquet (Si pas de nom de paquet supprime tout les paquets orphelins)
 ```
 
-chercher si un paquet existe dans la bibliothéque de la distribution
+- ### Chercher si un paquet existe dans la bibliothéque de la distribution
 ```bash
 apt search nomdupaquet
 ```
 
-mettre à jours un paquet spécifique spécialement
+- ### Mettre à jours un paquet spécifique spécialement
 ```bash
 apt install --only-upgrade nomdupaquet
 ```
 
 
-ajouter des dépots extérieur à la librairie
+- ### Ajouter des dépots extérieur à la librairie
 ```bash
 cd/etc/apt/sources.list.d/
 (enregistrer des dépots dedans)
@@ -96,29 +97,29 @@ Modifier format de la clé
 gpg--dearmor google-key.pub > google-key.gpg
 ```
 
-Mettre à jours complètement le système des distributions intallé
+- ### Mettre à jours complètement le système des distributions intallé
 ```bash
 apt full-upgrade
 si besoin de nettoyer cache
 apt autoclean et suppression des paquets inutiles apt autoremove
 ```
 
-Upgrade la distribution 
+- ### Upgrade la distribution 
 ```bash
 apt dist-upgrade
 ```
 
-vérifier heure système
+- ### vérifier heure système
 ```bash
 date
 ```
 
-Voir si l'horloge est synchro
+- ### Voir si l'horloge est synchro
 ```bash
 timedatectl timesync-status
 ```
 
-Se synchro avec une Horloge internet
+- ### Se synchro avec une Horloge internet
 ```bash
 /etc/systemd/timesyncd.con
 nano timesync.conf
@@ -128,7 +129,7 @@ Redémarrer le service pour actualliser
 systemctl restart systemd-timesyncd.service
 ```
 
-Recupérer la list des times zones possibles
+- ### Recupérer la list des times zones possibles
 
 ```bash
 timedatectl list-timezones

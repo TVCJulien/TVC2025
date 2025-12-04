@@ -52,10 +52,11 @@ mkdir ~/Dossier_Test
 rm -r nomfichier
 ```
 
-- ### **Bouger un fichier**
+- ### **Changer de destination/nom un fichier**
 ```bash
 mv source destination/
-Si pas de chemin modifie le nom du fichier par celui voulu
+
+Si modification nom fichier 
 mv NomActuel nomVoulu
 ```
 

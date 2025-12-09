@@ -1,0 +1,27 @@
+  - ### Lister les processus
+  ```bash
+  ps
+  ````
+  - ### Surveillance temps réel
+  ```bash
+  top
+  ````
+
+  - ### Tuer un processus
+  ```bash
+  kill -Signal PID (numéro)
+  pkill nom (permet de tuer depuis le nom)
+  kill -9 SignalPID (Force l'arrêt immédiat)
+  ````
+
+  - ### Liste processus en fonction de critères
+  ```bash
+  pgrep -u username
+  pgrep -u cdurand
+  ````
+
+  - ### Afficher liste des processus en arrière plan avec un numéro
+  ```bash
+  Jobs
+  ````
+

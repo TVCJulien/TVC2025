@@ -116,18 +116,26 @@ grep [OPTIONS] MOTIF [FICHIER]
 - ### **Donner des droits à un fichier**
 ```bash
 chmod [<SET><ACTION><PERMISSIONS>]... FICHIER
+exemple : $ chmod ugo+rw exemple.txt (Affection read + write au groupe User, Group et Others)
+possible de remplacer rwx par leurs décimal depuis le binaire. exemple RWX = 7 -WX = 3 R-X = 5
 ```
 | Command | Description   |                        |                        |         |
 | :---:   | :---:         |:---:                   | :---:                  | :---:   |
-| Set     | U : User      | G : Group              | o : others             | a : all |
+| Set     | u : User      | g : Group              | o : others             | a : all |
 | action  | + : add droit | = : affecter le droit  | - : Supprimer le droit |         |
 | perm    | r : read      | w : write              | x : execute            |         |
 
 - ### **Modifié propriété fichier**
 ```bash
 chown [OPTIONS] [PROPRIÉTAIRE] FICHIER
+exemple pour donner a un utilisateur + groupe (chown veilleur1:cybersec)
 ```
 ##### *exemple : sudo chown root hello.sh*
+
+- ### **Donner par défaut une valeur de droit au futur créé**
+```bash
+umask 640 
+```
 
 - ### **copier des fichiers ou des partitions entières au niveau du bit.**
 ```bash

@@ -10,7 +10,7 @@
 
   - ### Tuer un processus
   ```bash
-  kill -Signal PID (numéro)
+  kill -Signal "PID" (numéro)
   pkill nom (permet de tuer depuis le nom)
   kill -9 SignalPID (Force l'arrêt immédiat)
   ````

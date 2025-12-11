@@ -19,10 +19,13 @@
   ```bash
   pgrep -u username
   pgrep -u cdurand
-  ````
+  ```
 
   - ### Afficher liste des processus en arrière plan avec un numéro
   ```bash
   Jobs
   ````
-
+  - ### Afficher l'arborescence des processus
+  ```bash
+  ps -e -o pid,ppid,comm --forest
+  ```

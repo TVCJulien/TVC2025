@@ -48,5 +48,6 @@
   - ### Pour ne pas vérouiller le fichier en mode écriture
   ```bash
   tail -n 5 dossier (-n 5 pour lister les 5 dernière ligne)
+  taill 5 fonctionne aussi
   less marche auss
   ````

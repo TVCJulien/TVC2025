@@ -70,3 +70,8 @@
   ```bash
   journalctl -xeu nomservice
   ````
+
+  - ### Afficher les logs jusqu'à une date/heure spécifié
+  ```bash
+  journalctl  --until <date>
+  ````

@@ -39,3 +39,8 @@
   ```bash
   free (-h) permet d'afficher en Mega ou Giga
   ````
+
+  - ### Afficher l'espace pris par un document/fichier en particulier
+  ```bash
+  du -sh /var/log
+  ````

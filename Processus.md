@@ -55,3 +55,18 @@
   ```bash
   tail -n 100 boot.log.2 | grep error
   ````
+
+  - ### Afficher tout les logs systèmes (Du plus ancien au récent)
+  ```bash
+  journalctl
+  ````
+
+  - ### Afficher les logs d'un service qu'on veut (Du plus ancien au récent)
+  ```bash
+  journalctl -u nomservice
+  ````
+
+  - ### Afficher les logs d'un service qu'on veut (Du plus récent au plus ancien)
+  ```bash
+  journalctl -xeu nomservice
+  ````

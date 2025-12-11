@@ -37,5 +37,5 @@
 
   - ### Voir la mémoire ram
   ```bash
-  free
+  free (-h) permet d'afficher en Mega ou Giga
   ````

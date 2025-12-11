@@ -51,3 +51,7 @@
   taill 5 fonctionne aussi
   less marche auss
   ````
+  - ### Pour Chercher les 100 dernières lignes avec une erreur
+  ```bash
+  tail -n 100 boot.log.2 | grep error
+  ````

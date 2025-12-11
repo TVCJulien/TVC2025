@@ -3,7 +3,7 @@
   ps (Liste les processus lié à la console
   ps -aux (Listé tout les processus)
   ````
-  - ### Surveillance temps réel
+  - ### Surveillance temps réel des processus
   ```bash
   top
   ````

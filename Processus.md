@@ -80,3 +80,26 @@
   ```bash
   journalctl -g SearchUser
   ```
+
+ - ### Diagnostique Apache2 situation
+
+##### Vérifier état service
+```bash
+systemctl status apache2
+```
+
+##### Si serv arrêté
+```bash
+systemctl start apache2
+```
+
+##### Vérifier état service
+```bash
+systemctl status apache2
+```
+
+##### Si besoin, inspecter log services
+```bash
+journalctl -xeu apache2
+```
+ 

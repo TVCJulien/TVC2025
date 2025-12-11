@@ -29,3 +29,13 @@
   ```bash
   ps -e -o pid,ppid,comm --forest
   ```
+
+  - ### Voir la place disponible sur disk
+  ```bash
+  df
+  ````
+
+  - ### Voir la mémoire ram
+  ```bash
+  free
+  ````

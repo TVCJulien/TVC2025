@@ -1,6 +1,7 @@
-  - ### Lister les processus lié à la console
+  - ### Lister les processus 
   ```bash
-  ps
+  ps (Liste les processus lié à la console
+  ps -aux (Listé tout les processus)
   ````
   - ### Surveillance temps réel
   ```bash

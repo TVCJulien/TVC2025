@@ -102,4 +102,9 @@ systemctl status apache2
 ```bash
 journalctl -xeu apache2
 ```
+
+##### Fichier config dans /etc/default
+```bash
+cd /etc/default/
+```
  

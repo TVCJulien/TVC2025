@@ -1,4 +1,4 @@
-  - ### Lister les processus
+  - ### Lister les processus lié à la console
   ```bash
   ps
   ````

@@ -132,6 +132,12 @@ exemple pour donner a un utilisateur + groupe (chown veilleur1:cybersec)
 ```
 ##### *exemple : sudo chown root hello.sh*
 
+- ### **Donner le droit d'accés un deuxième groupe**
+```bash
+setfacl -m g:admin :r fichier
+```
+
+
 - ### **Donner par défaut une valeur de droit au futur créé**
 ```bash
 umask 640 

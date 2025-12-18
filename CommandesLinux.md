@@ -247,3 +247,11 @@ usermod -g nomdugroupe (ou -G) [Options] nomuutilisateur
 passwd -e nomutilisateur
 cat /etc/shadow | grep nomutilisateur (si ! au début ou pas de valeur vers la fin = pas encore changé)
 ```
+
+
+- ### **Archiver un dossier / compresser**
+```bash
+tar -cvf stagiaire.tar /home/stagiaire/
+tar <option> <Fichier.tar> <chemin des dossiers à copier>
+```
+
